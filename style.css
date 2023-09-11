@@ -99,6 +99,12 @@ body {
 
 }
 
+.pata-assinatura {
+  position: absolute;
+  bottom: 10px;
+  z-index: 2;
+
+}
 .assinatura {
   border-top: 2px solid var(--cor-labels);
   position: absolute;
@@ -111,4 +117,21 @@ body {
   display: flex;
   flex-direction: column;
 
+}
+
+/*
+.logo {
+
+  width: 200px;
+  position: absolute;
+  left: 0;
+}
+
+*/
+.logo-peq {
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
