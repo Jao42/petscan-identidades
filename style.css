@@ -1,8 +1,18 @@
+:root {
+  --cor-fundo: rgba(231, 139, 174, 1);
+  --cor-labels: rgba(255, 0, 97, 0.9);
+  --cor-bordas: rgba(122, 164, 177, 1);
+  --cor-ondas: rgba(234, 170, 197, 1);
+}
+
+
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color: #1e1e1e;
 
 }
 
@@ -24,7 +34,7 @@ body {
 
 .wave-border {
   z-index: 0;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 .container-info, .foto {
   z-index: 2;
@@ -37,22 +47,23 @@ body {
 }
 
 .container-identidade {
-  height: 259px;
-  width: 558px;
-  background-color: #D355BF;
+  height: 254px;
+  width: 556px;
+  background-color: var(--cor-fundo);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  color: white;
+  color: var(--cor-labels);
+  box-sizing: border-box;
 
 }
 
 .fundo-verde {
-  height: calc(100% - 30px);
-  width: calc(100% - 30px);
-  background-color: #3CB371;
+  height: 228px;
+  width: 519px;
+  background-color: var(--cor-bordas);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,9 +72,9 @@ body {
 }
 
 .container-conteudo {
-  height: calc(100% - 25px);
-  width: calc(100% - 25px);
-  background-color: #D355BF;
+  height: 203px;
+  width: 498px;
+  background-color: var(--cor-fundo);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +100,7 @@ body {
 }
 
 .assinatura {
-  border-top: 2px solid white;
+  border-top: 2px solid var(--cor-labels);
   position: absolute;
   align-self: flex-end;
   padding: 5px 10px 0 10px;
