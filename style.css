@@ -6,16 +6,25 @@
 }
 
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
+  background-color: #222;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  background-color: #1e1e1e;
+  height: 100vh;
 
 }
 
+.main-index {
+  position: absolute;
+  top: 100px;
+
+}
 
 .wave {
   position: absolute;
@@ -46,9 +55,18 @@ body {
   align-self: flex-start;
 }
 
-.container-identidade {
-  height: 254px;
+.identidades {
+  display: flex;
+  position: relative;
+  flex-direction: column;
   width: 556px;
+  height: 254px;
+
+}
+
+.container-identidade {
+  height: 100%;
+  width: 100%;
   background-color: var(--cor-fundo);
   display: flex;
   flex-direction: row;
@@ -133,5 +151,104 @@ body {
   padding: 10px;
   position: absolute;
   right: 0;
+  bottom: 0;
+}
+
+.logo-principal {
+  width: 156px;
+  height:94px;
+  position: absolute;
+  left: 0;
+  padding: 10px;
+
+
+}
+
+.action-icons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  padding: 10px 0;
+
+
+}
+.icon {
+  width: 30px;
+  height: 30px;
+
+}
+
+.texto-vertical {
+
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: 10;
+  right: calc(-100.83px + 10px);
+  font-size: 10px;
+
+}
+
+body.dashboard {
+  flex-direction: row;
+
+}
+
+
+.menu-lateral {
+  flex-grow: 1;
+
+}
+
+
+.main-dashboard {
+  flex-grow: 5;
+
+
+}
+
+.frente, .verso {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .6s linear;
+
+
+}
+
+.frente {
+  transform: rotateY(0deg);
+
+}
+
+.verso {
+  transform: rotateY(180deg);
+
+}
+
+.rotacionadas > .frente {
+  transform: rotateY(-180deg);
+}
+
+.rotacionadas > .verso {
+  transform: rotateY(0deg);
+}
+
+/*gambiarra */
+.responsavel {
+  display: none;
+}
+
+
+
+.qrcode-identidade {
+  width: 100px;
+  height: 100px;
+
+}
+
+.virar-pagina {
+  cursor: pointer;
+  z-index: 10;
+  position: absolute;
+  left: 0;
   bottom: 0;
 }
